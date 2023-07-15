@@ -1,0 +1,10 @@
+#Alternate default index page
+DirectoryIndex index.php
+#Make all subdirectories of API redirect to index.php
+RewriteEngine On
+RewriteBase /api/
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^(.*)$ index.php/$1 [L]

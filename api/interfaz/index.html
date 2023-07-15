@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background-color: #dce7f5;
+        font-family: 'Inter', sans-serif;      
+    }
+      .logo-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      .logo-container img {
+        width: 150px;
+        height: auto;
+      }
+      .container {
+        width: 400px;
+        margin: 0 auto;
+        margin-top: 250px;
+      }
+      h5 {
+        text-align: center;
+      }
+      .boton-submit {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        background-color: #313145;
+        border-radius: 20px;
+        color: #ffffff;
+        padding: 8px 15px;
+        width: 100%;
+        border-width: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo-container">
+        <img src="assets/Buzzer.png" alt="Logo" />
+      </div>
+      <h5>¡Bienvenido al web service de Buzzer!</h5>
+      <form method="POST" action="login.php">
+        <div class="form-group">
+          <label for="username">Usuario:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="username"
+            name="username"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Contraseña:</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            name="password"
+          />
+        </div>
+            <button type="submit" class="boton-submit">Iniciar sesión</button>
+      </form>
+    </div>
+  </body>
+  
+</html>
